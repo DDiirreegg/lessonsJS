@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="liczba1" />
+  <input type="text" id="liczba2" />
+  <input type="text" id="liczba3" />
+  <input type="text" id="liczba4" />
+  <div id="wyniki"></div>
+  <script src="main.js" type="text/javascript"></script>
+  <script type="text/javascript">
+
+    const l1 = document.querySelector('#liczba1')
+    const l2 = document.querySelector('#liczba2')
+    const l3 = document.querySelector('#liczba3')
+    const l4 = document.querySelector('#liczba4')
+
+    const wynik = document.querySelector('#wyniki')
+
+    // Функция, которая обновляет результаты при изменении любого из полей ввода
+    
+
+    // Добавить обработчик события input для каждого из полей ввода
+    l1.addEventListener('input', updateResults);
+    l2.addEventListener('input', updateResults);
+    l3.addEventListener('input', updateResults);
+    l4.addEventListener('input', updateResults);
+
+    // Вызвать функцию updateResults при загрузке страницы, чтобы отобразить начальные результаты
+    updateResults();
+
+  </script>
+</body>
+</html>
