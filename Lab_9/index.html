@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <canvas id="myCanvas" width="800" height="600"></canvas>
+  <br>
+  <label for="numBalls">Number of Balls:</label>
+  <input type="number" id="numBalls" value="5">
+  <label for="collisionThreshold">Collision Threshold (% of screen width):</label>
+  <input type="number" id="collisionThreshold" value="20">
+  <button onclick="start()">Start</button>
+  <button onclick="reset()">Reset</button>
+  
+  <script src="main.js"></script>
+</body>
+</html>

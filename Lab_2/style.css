@@ -6,29 +6,37 @@
 }
 
 .slider-container {
-  width: 80%;
+  /* width: 80%;
   margin: 0 auto;
   overflow: hidden;
-  position: relative;
+  position: relative; */
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
 }
 
-.slider {
+/* .slider {
   width: 600%;
   display: flex;
+} */
+
+.slide, .prevButton, .nextButton {
+  /* width: 16.666%;
+  overflow: hidden; */
+  height: 100px;
+  width: 33.333%; /* Можно задать любую другую ширину блока */
+  /* margin: .5rem; */
 }
 
-.slide {
-  width: 16.666%;
-  overflow: hidden;
-}
-
-.slide img {
+.slider img {
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 
- .container .prev {  
+ /* .container .prev {  
   
   position: absolute;
   top: 50%;
@@ -53,7 +61,7 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
- }
+ } */
 
  .dot-container {
   display: flex;
@@ -62,7 +70,7 @@
 
  }
 
- .dot {
+ .slideDot {
   display: block;
   height: 20px;
   width: 20px;
@@ -70,6 +78,6 @@
   background-size: contain;
  }
 
- .dot:hover {
+ .slideDot:hover {
   background-image: url(Img/dotOnClick.png);
  }
