@@ -1,83 +1,81 @@
-.container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.slider-container {
-  /* width: 80%;
-  margin: 0 auto;
+body {
+  margin: 0;
+  padding-top: 10px;
+  font-family: monospace;
   overflow: hidden;
-  position: relative; */
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
+  background-image: url(./Img/Japan.jpg);
+  background-size: cover;
 }
-
-/* .slider {
-  width: 600%;
-  display: flex;
-} */
-
-.slide, .prevButton, .nextButton {
-  /* width: 16.666%;
-  overflow: hidden; */
-  height: 100px;
-  width: 33.333%; /* Можно задать любую другую ширину блока */
-  /* margin: .5rem; */
-}
-
-.slider img {
-  width: 100%;
-  height: 100%;
-}
-
-
- /* .container .prev {  
+.slider {  
+  width: 650px;  
+  max-width: 100vw;
+  height: 350px;  
+  margin: 10% auto;
+  position: relative;
+  overflow: hidden;
   
+}
+
+.list { 
   position: absolute;
-  top: 50%;
-  left: 30px;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);    
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
- }
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  width: max-content;
+  transition: 1.5s;
+}
 
- .container .next {  
-    position: absolute;
-    top: 50%;
-    left: 735px;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);    
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
- } */
+.list img {
+  width: 650px;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
 
- .dot-container {
+.buttons {
+   position: absolute;
+   top: 45%;
+   left: 5%;
+   width: 90%;
+   display: flex;
+   justify-content: space-between;
+}
+
+.buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: inherit;
+  color: #fff;
+  border-color: #fff;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.dots { 
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  left: 0;
+  width: 100%;  
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-
+}
+ .dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 20px;
+  transition: 1.5s;
  }
 
- .slideDot {
-  display: block;
-  height: 20px;
-  width: 20px;
-  background-image: url(Img/dot.png);
-  background-size: contain;
- }
+ .dots li.active {
+  width: 30px;
 
- .slideDot:hover {
-  background-image: url(Img/dotOnClick.png);
+
  }

@@ -1,11 +1,11 @@
+const SPACE_KEY = 'Space';
+const INTERVAL_DURATION = 3000;
+
 const list = document.querySelector('.slider .list');
 const items = document.querySelectorAll('.slider .list .item');
 const dots = document.querySelectorAll('.slider .dots li');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
-
-const SPACE_KEY = 'Space';
-const INTERVAL_DURATION = 5000;
 
 let sliderIndex = 0;
 let itemsLength = items.length - 1;
@@ -22,14 +22,13 @@ function handleSpacebar(event) {
 document.addEventListener('keydown', handleSpacebar);
 
 function sliderOn() {
-    if (intervalIndex == 0){
-        intervalId = setInterval(() => {next.click()}, 3000);
-    }else {
+    if (intervalIndex === 0) {
+        intervalId = setInterval(() => next.click(), INTERVAL_DURATION);
+    } else {
         clearInterval(intervalId);
     }
     reloadSlider();
-}   
-
+}
 
 next.onclick = function () {
     sliderIndex = (sliderIndex >= itemsLength) ? 0 : sliderIndex + 1;
@@ -53,12 +52,12 @@ function reloadSlider() {
     dots[sliderIndex]?.classList.add('active');
 }
 
-
 dots.forEach((li, key) => {
-    li.addEventListener('click', function() {
+    li.addEventListener('click', function () {
         sliderIndex = key;
         reloadSlider();
-    })
-})
+    });
+});
 
+// Инициализация
 sliderOn();
