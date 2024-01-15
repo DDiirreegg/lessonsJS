@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding-top: 10px;
+  font-family: monospace;
+  overflow: hidden;
+  background-image: url(./Img/Japan.jpg);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+}
+
+.sounds {
+  display: none;
+}
+
+.addNewItemBtn {
+  width: 20px;
+  height: 20px;
+  background-image: url('./Img/plus.png');
+  border: none;
+  background-size: cover;
+  background-color: inherit;
+}
+
+.addNewItemBtn:hover {
+  background-image: url('./Img/plus (1).png');
+}
