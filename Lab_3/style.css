@@ -15,15 +15,8 @@ body {
   display: none;
 }
 
-.addNewItemBtn {
-  width: 20px;
-  height: 20px;
-  background-image: url('./Img/plus.png');
-  border: none;
-  background-size: cover;
-  background-color: inherit;
-}
-
-.addNewItemBtn:hover {
-  background-image: url('./Img/plus (1).png');
+.navigation {
+  margin: auto;
+  font-family: serif;
+  
 }
