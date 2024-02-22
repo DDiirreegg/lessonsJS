@@ -7,57 +7,66 @@
   <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <div class="navigation">
-      <p data-key="81">Q - Boom</p>
-      <p data-key="87">W - Clap</p>
-      <p data-key="69">E - Hi-Hat</p>
-      <p data-key="65">A - Kick</p>
-      <p data-key="83">S - Open-Hat</p>
-      <p data-key="68">D - Ride</p>
-      <p data-key="90">Z - Snare</p>
-      <p data-key="88">X - Tink</p>
-      <p data-key="67">C - Tom</p>
-    </div>    
-    <div class="recording">
-      <div class="recording-items">
-        <div class="item1">
-          <button class="btnPlay">Play</button>
-          <button>Recording</button>
-          <audio src="" controls id="#s1"></audio>          
-        </div>     
-        <div class="item2">
-          <button class="btnPlay">Play</button>
-          <button>Recording</button>
-          <audio src="" controls id="#s1"></audio>          
-        </div>  
-        <div class="item3">
-          <button class="btnPlay">Play</button>
-          <button>Recording</button>
-          <audio src="" controls id="#s1"></audio>
-        </div>  
-        <div class="item4">
-          <button class="btnPlay">Play</button>
-          <button>Recording</button>
-          <audio src="" controls id="#s1"></audio>
-        </div>     
-      </div>     
-      <div class="playAllLines">
-        <button>Play</button>
-      </div> 
-    </div>
-  </div>
-  <div class="sounds">
-    <audio data-key="81" src="./sounds/boom.wav" controls id="#s1"></audio>
-    <audio data-key="87" src="./sounds/clap.wav" controls id="#s2"></audio>
-    <audio data-key="69" src="./sounds/hihat.wav" controls id="#s3"></audio>
-    <audio data-key="65" src="./sounds/kick.wav" controls id="#s4"></audio>
-    <audio data-key="83" src="./sounds/openhat.wav" controls id="#s5"></audio>
-    <audio data-key="68" src="./sounds/ride.wav" controls id="#s6"></audio>
-    <audio data-key="90" src="./sounds/snare.wav" controls id="#s7"></audio>
-    <audio data-key="88" src="./sounds/tink.wav" controls id="#s8"></audio>
-    <audio data-key="67" src="./sounds/tom.wav" controls id="#s9"></audio>
-  </div>
+      <div class="play">
+        <div data-key="81" class="key">
+            <div class="key-symbol">Q</div><span>: Boom</span>
+        </div>
+        <div data-key="87" class="key">
+            <div class="key-symbol">W</div><span>: Clap</span>
+        </div>
+        <div data-key="69" class="key">
+            <div class="key-symbol">E</div><span>: Hihat</span>
+        </div>
+        <div data-key="65" class="key">
+            <div class="key-symbol">A</div><span>: Kick</span>
+        </div>
+        <div data-key="83" class="key">
+            <div class="key-symbol">S</div><span>: Openhat</span>
+        </div>
+        <div data-key="68" class="key">
+            <div class="key-symbol">D</div><span>: Ride</span>
+        </div>
+        <div data-key="90" class="key">
+            <div class="key-symbol">Z</div><span>: Snare</span>
+        </div>
+        <div data-key="88" class="key">
+            <div class="key-symbol">X</div><span>: Tik</span>
+        </div>
+        <div data-key="67" class="key">
+            <div class="key-symbol">C</div><span>: Tom</span>
+        </div>
+      </div>
+      <div class="record">
+        <div class="record-channel">
+            <button id="channel10-record">Nagraj: Kanał 1</button>
+            <button id="channel10-play">Odtwórz: Kanał 1</button>
+        </div>
+        <div class="record-channel">
+            <button id="channel11-record">Nagraj: Kanał 2</button>
+            <button id="channel11-play">Odtwórz: Kanał 2</button>
+        </div>
+        <div class="record-channel">
+            <button id="channel12-record">Nagraj: Kanał 3</button>
+            <button id="channel12-play">Odtwórz: Kanał 3</button>
+        </div>
+        <div class="record-channel">
+            <button id="channel13-record">Nagraj: Kanał 4</button>
+            <button id="channel13-play">Odtwórz: Kanał 4</button>
+        </div>
+        <div class="record-channel">
+            <button id="play-all">Odtwórz wszystkie</button>
+        </div>
+      </div>
+
+    <audio data-key="81" src="./sounds/boom.wav"></audio>
+    <audio data-key="87" src="./sounds/clap.wav"></audio>
+    <audio data-key="69" src="./sounds/hihat.wav"></audio>
+    <audio data-key="65" src="./sounds/kick.wav"></audio>
+    <audio data-key="83" src="./sounds/openhat.wav"></audio>
+    <audio data-key="68" src="./sounds/ride.wav"></audio>
+    <audio data-key="90" src="./sounds/snare.wav"></audio>
+    <audio data-key="88" src="./sounds/tink.wav"></audio>
+    <audio data-key="67" src="./sounds/tom.wav"></audio>
   <script src="main.js"></script>
 </body>
 </html>
